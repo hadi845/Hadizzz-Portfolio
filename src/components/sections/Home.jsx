@@ -11,7 +11,7 @@ export const Home = () => {
           {/* Profile Image with Instagram-style Gradient Border */}
           <div className="w-36 h-36 rounded-full mx-auto mb-6 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-1">
             <img
-              src="/assets/me1.jpg" // <-- Replace this with your image path
+              src="/me1.JPG" // <-- Replace this with your image path
               alt="Hadi Muhammad"
               className="w-full h-full rounded-full object-cover"
             />
