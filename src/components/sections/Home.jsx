@@ -1,6 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import hadiImg from "../../assets/me2.jpg"; // adjust the path based on your file structure
-
+import hadiImg from "../../assets/me2.jpg"; // Make sure this path is correct
 
 export const Home = () => {
   return (
@@ -10,22 +9,22 @@ export const Home = () => {
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
-          {/* Profile Image with Instagram-style Gradient Border */}
-          <div className="w-50 h-50 rounded-full mx-auto mb-6 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-1">
+          {/* Enlarged Profile Image with Custom Gradient Border */}
+          <div className="w-48 h-48 rounded-full mx-auto mb-8 bg-gradient-to-tr from-sky-300 via-blue-600 to-blue-900 p-1 shadow-lg">
             <img
-              src={hadiImg} // <-- Replace this with your image path
+              src={hadiImg}
               alt="Hadi Muhammad"
               className="w-full h-full rounded-full object-cover"
             />
           </div>
 
           {/* Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent whitespace-nowrap">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text text-transparent whitespace-nowrap">
             Hi, I'm Hadi Muhammad
           </h1>
 
           {/* Description */}
-          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
+          <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
             A passionate Software Engineering student at COMSATS University Islamabad, focused on developing innovative, user-centric software solutions. Skilled in Python, Java, and C, with a strong interest in artificial intelligence, machine learning, and creative problem-solving. Always eager to learn new technologies and contribute to impactful projects. Outside of tech, enjoys photography, videography, and editing as creative outlets.
           </p>
 
