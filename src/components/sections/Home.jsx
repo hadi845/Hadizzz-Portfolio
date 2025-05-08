@@ -9,16 +9,23 @@ export const Home = () => {
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
-          {/* Animated Profile Image with Blue Gradient Border */}
+          {/* Profile Image with Spinning Gradient Border */}
           <div className="relative w-52 h-52 mx-auto mb-8">
-            {/* Spinning Gradient Border */}
-            <div className="absolute inset-0 animate-spin-slow rounded-full bg-gradient-to-tr from-sky-300 via-blue-600 to-blue-900 flex items-center justify-center">
-              {/* Inner black circle to create the ring effect */}
-              <div className="w-[184px] h-[184px] bg-black rounded-full flex items-center justify-center overflow-hidden">
+            {/* Outer Gradient Ring */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-full h-full rounded-full animate-spin-slow bg-gradient-to-tr from-sky-300 via-blue-600 to-blue-900 p-1">
+                {/* Static inner circle to block spinning effect from image */}
+                <div className="w-full h-full bg-black rounded-full" />
+              </div>
+            </div>
+
+            {/* Profile Image (static and centered) */}
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <div className="w-[192px] h-[192px] rounded-full overflow-hidden">
                 <img
                   src={hadiImg}
                   alt="Hadi Muhammad"
-                  className="w-full h-full object-cover rounded-full"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
