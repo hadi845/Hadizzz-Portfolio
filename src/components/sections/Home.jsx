@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import hadiImg from "../../assets/me2.jpg"; // Make sure this path is correct
+import hadiImg from "../../assets/me2.jpg";
 
 export const Home = () => {
   return (
@@ -9,13 +9,23 @@ export const Home = () => {
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
-          {/* Enlarged Profile Image with Custom Gradient Border */}
-          <div className="w-48 h-48 rounded-full mx-auto mb-8 bg-gradient-to-tr from-sky-300 via-blue-600 to-blue-900 p-1 shadow-lg">
-            <img
-              src={hadiImg}
-              alt="Hadi Muhammad"
-              className="w-full h-full rounded-full object-cover"
-            />
+          {/* Animated Profile Image with Blue Gradient Border */}
+          <div className="w-48 h-48 mx-auto mb-8 relative">
+            {/* Spinning Gradient Border */}
+            <div className="absolute inset-0 animate-spin-slow rounded-full bg-gradient-to-tr from-sky-300 via-blue-600 to-blue-900 p-1">
+              <div className="w-full h-full bg-black rounded-full"></div>
+            </div>
+
+            {/* Profile Image (static, on top) */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-full h-full rounded-full overflow-hidden">
+                <img
+                  src={hadiImg}
+                  alt="Hadi Muhammad"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Heading */}
