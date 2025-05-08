@@ -5,23 +5,28 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-4"
+      className="min-h-screen flex items-center justify-center relative"
     >
       <RevealOnScroll>
-        <div className="text-center z-10 max-w-screen-sm mx-auto">
-          {/* Animated Profile Image with Blue Gradient Border */}
+        <div className="text-center z-10 px-4">
+          {/* Profile Image with Spinning Gradient Border */}
           <div className="relative w-52 h-52 mx-auto mb-8">
-            {/* Spinning Gradient Border */}
-            <div className="absolute inset-0 animate-spin-slow rounded-full bg-gradient-to-tr from-sky-300 via-blue-600 to-blue-900 p-1">
-              {/* Static container to stop image from spinning */}
-              <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
-                <div className="w-48 h-48 rounded-full overflow-hidden">
-                  <img
-                    src={hadiImg}
-                    alt="Hadi Muhammad"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+            {/* Outer Gradient Ring */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-full h-full rounded-full animate-spin-slow bg-gradient-to-tr from-green-500 via-blue-500 to-blue-900 p-1">
+                {/* Static inner circle to block spinning effect from image */}
+                <div className="w-full h-full bg-black rounded-full" />
+              </div>
+            </div>
+
+            {/* Profile Image (static and centered) */}
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <div className="w-[192px] h-[192px] rounded-full overflow-hidden">
+                <img
+                  src={hadiImg}
+                  alt="Hadi Muhammad"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
