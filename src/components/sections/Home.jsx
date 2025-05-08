@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import hadiImg from "../assets/me1.jpg"; // adjust the path based on your file structure
+import hadiImg from "src/assets/me1.jpg"; // adjust the path based on your file structure
 
 
 export const Home = () => {
