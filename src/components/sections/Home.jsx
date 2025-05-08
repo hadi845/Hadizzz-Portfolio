@@ -13,7 +13,7 @@ export const Home = () => {
           <div className="relative w-52 h-52 mx-auto mb-8">
             {/* Outer Gradient Ring */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-full h-full rounded-full animate-spin-slow bg-gradient-to-tr from-green-500 via-blue-600 to-blue-900 p-1">
+              <div className="w-full h-full rounded-full animate-spin-slow bg-gradient-to-tr from-green-500 via-blue-500 to-blue-900 p-1">
                 {/* Static inner circle to block spinning effect from image */}
                 <div className="w-full h-full bg-black rounded-full" />
               </div>
