@@ -10,12 +10,12 @@ export const Home = () => {
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
           {/* Animated Profile Image with Blue Gradient Border */}
-          <div className="w-60 h-60 mx-auto mb-8 relative">
+          <div className="w-52 h-52 mx-auto mb-8 relative">
             {/* Spinning Gradient Border */}
             <div className="absolute inset-0 animate-spin-slow z-0 rounded-full bg-gradient-to-tr from-sky-300 via-blue-600 to-blue-900 p-1 shadow-[0_0_30px_rgba(59,130,246,0.4)]"></div>
 
             {/* Profile Image */}
-            <div className="relative z-10 w-full h-full rounded-full overflow-hidden bg-black">
+            <div className="relative z-10 w-48 h-48 rounded-full overflow-hidden bg-black">
               <img
                 src={hadiImg}
                 alt="Hadi Muhammad"
