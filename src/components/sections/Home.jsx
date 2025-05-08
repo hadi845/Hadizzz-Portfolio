@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import hadiImg from "../../assets/me1.jpg"; // adjust the path based on your file structure
+import hadiImg from "../../assets/me2.jpg"; // adjust the path based on your file structure
 
 
 export const Home = () => {
@@ -11,7 +11,7 @@ export const Home = () => {
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
           {/* Profile Image with Instagram-style Gradient Border */}
-          <div className="w-36 h-36 rounded-full mx-auto mb-6 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-1">
+          <div className="w-50 h-50 rounded-full mx-auto mb-6 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-1">
             <img
               src={hadiImg} // <-- Replace this with your image path
               alt="Hadi Muhammad"
