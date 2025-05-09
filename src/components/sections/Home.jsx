@@ -10,7 +10,7 @@ export const Home = () => {
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
           {/* Profile Image with Spinning Gradient Border */}
-          <div className="relative w-52 h-52 mx-auto mb-8">
+          <div className="relative w-40 h-40 sm:w-52 sm:h-52 mx-auto mb-8">
             {/* Outer Gradient Ring */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-full h-full rounded-full animate-spin-slow bg-gradient-to-tr from-green-500 via-blue-500 to-blue-900 p-1">
@@ -21,7 +21,7 @@ export const Home = () => {
 
             {/* Profile Image (static and centered) */}
             <div className="absolute inset-0 flex items-center justify-center z-10">
-              <div className="w-[192px] h-[192px] rounded-full overflow-hidden">
+              <div className="w-[160px] h-[160px] sm:w-[192px] sm:h-[192px] rounded-full overflow-hidden">
                 <img
                   src={hadiImg}
                   alt="Hadi Muhammad"
@@ -32,12 +32,12 @@ export const Home = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text text-transparent break-words text-balance">
+          <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text text-transparent break-words text-balance">
             Hi, I'm Hadi Muhammad
           </h1>
 
           {/* Description */}
-          <p className="text-gray-400 text-base md:text-lg mb-10 max-w-prose mx-auto px-2">
+          <p className="text-gray-400 text-sm sm:text-base md:text-lg mb-10 max-w-prose mx-auto px-2">
             A passionate Software Engineering student at COMSATS University Islamabad, focused on developing innovative, user-centric software solutions. Skilled in Python, Java, and C, with a strong interest in artificial intelligence, machine learning, and creative problem-solving. Outside of tech, enjoys photography, videography, and editing.
           </p>
 
