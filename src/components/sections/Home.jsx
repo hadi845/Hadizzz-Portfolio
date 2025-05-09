@@ -21,7 +21,7 @@ export const Home = () => {
 
             {/* Profile Image (static and centered) */}
             <div className="absolute inset-0 flex items-center justify-center z-10">
-              <div className="w-[160px] h-[160px] sm:w-[192px] sm:h-[192px] rounded-full overflow-hidden">
+              <div className="w-[144px] h-[144px] sm:w-[192px] sm:h-[192px] rounded-full overflow-hidden">
                 <img
                   src={hadiImg}
                   alt="Hadi Muhammad"
