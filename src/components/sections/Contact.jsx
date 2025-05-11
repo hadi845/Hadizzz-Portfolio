@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RevealOnScroll } from './RevealOnScroll';
+import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
 
 const GradientBackground = () => (
