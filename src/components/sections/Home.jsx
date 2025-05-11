@@ -1,12 +1,23 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import hadiImg from "../../assets/me2.jpg";
 
+const GradientBackground = () => (
+  <>
+    {/* Top Left Gradient Orb */}
+    <div className="absolute top-[-120px] left-[-100px] w-80 h-80 bg-gradient-to-tr from-blue-400 via-indigo-500 to-purple-600 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
+    {/* Bottom Right Gradient Orb */}
+    <div className="absolute bottom-[-120px] right-[-100px] w-80 h-80 bg-gradient-to-br from-cyan-400 via-sky-500 to-blue-600 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
+  </>
+);
+
 export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex items-center justify-center relative bg-gray-900 overflow-hidden"
     >
+      <GradientBackground />
+
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
           {/* Profile Image with Spinning Gradient Border */}

@@ -1,5 +1,14 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
+const GradientBackground = () => (
+  <>
+    {/* Top Left Gradient Orb */}
+    <div className="absolute top-[-120px] left-[-100px] w-80 h-80 bg-gradient-to-tr from-blue-400 via-indigo-500 to-purple-600 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
+    {/* Bottom Right Gradient Orb */}
+    <div className="absolute bottom-[-120px] right-[-100px] w-80 h-80 bg-gradient-to-br from-cyan-400 via-sky-500 to-blue-600 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
+  </>
+);
+
 export const About = () => {
   const programmingSkills = ["Python", "Java", "C"];
   const techAndTools = ["React", "TailwindCSS", "Git", "VS Code", "Canva"];
@@ -7,10 +16,12 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-20 bg-gray-900 relative overflow-hidden"
     >
+      <GradientBackground />
+      
       <RevealOnScroll>
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="max-w-3xl mx-auto px-4 z-10">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             About Me
           </h2>

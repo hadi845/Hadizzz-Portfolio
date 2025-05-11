@@ -1,13 +1,18 @@
-import { useState } from "react";
-import { RevealOnScroll } from "../RevealOnScroll";
+import React, { useState } from 'react';
+import { RevealOnScroll } from './RevealOnScroll';
 import emailjs from "emailjs-com";
 
+const GradientBackground = () => (
+  <>
+    {/* Top Right Gradient */}
+    <div className="absolute top-[-100px] right-[-100px] w-72 h-72 bg-gradient-to-tr from-cyan-500 via-blue-500 to-indigo-500 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
+    {/* Bottom Left Gradient */}
+    <div className="absolute bottom-[-100px] left-[-100px] w-72 h-72 bg-gradient-to-br from-fuchsia-500 via-pink-500 to-rose-500 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
+  </>
+);
+
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,17 +27,14 @@ export const Contact = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="min-h-screen flex items-center justify-center py-20"
-    >
+    <section id="contact" className="relative min-h-screen flex items-center justify-center py-20 bg-gray-900 overflow-hidden">
+      <GradientBackground />
       <RevealOnScroll>
-        <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            Get In Touch
-          </h2>
+        <div className="relative z-10 w-full max-w-lg px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">Get In Touch</h2>
           <form className="space-y-6" onSubmit={handleSubmit}>
-            <div className="relative">
+            {/* Name */}
+            <div>
               <input
                 type="text"
                 id="name"
@@ -47,7 +49,8 @@ export const Contact = () => {
               />
             </div>
 
-            <div className="relative">
+            {/* Email */}
+            <div>
               <input
                 type="email"
                 id="email"
@@ -62,7 +65,8 @@ export const Contact = () => {
               />
             </div>
 
-            <div className="relative">
+            {/* Message */}
+            <div>
               <textarea
                 id="message"
                 name="message"
@@ -77,6 +81,7 @@ export const Contact = () => {
               />
             </div>
 
+            {/* Submit Button */}
             <button
               type="submit"
               className="w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"

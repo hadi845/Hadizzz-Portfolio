@@ -19,6 +19,29 @@ body {
     }
   }
 
+  .gradient-blob {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 9999px;
+    filter: blur(120px);
+    opacity: 0.3;
+    z-index: -1;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+  }
+  
+
   .animate-spin-slow {
     animation: spin-slow 6s linear infinite;
   }
