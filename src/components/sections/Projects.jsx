@@ -4,10 +4,12 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 const GradientBackground = () => (
   <>
+    <RevealOnScroll>
     {/* Top Left Gradient Shape */}
     <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
     {/* Bottom Right Gradient Shape */}
     <div className="absolute bottom-0 right-0 w-72 h-72 bg-gradient-to-bl from-fuchsia-500 via-indigo-500 to-cyan-500 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
+    </RevealOnScroll>
   </>
 );
 
@@ -17,7 +19,9 @@ export const Projects = () => {
       <GradientBackground />
       <RevealOnScroll>
         <div className="relative z-10 max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center text-white">Featured Projects</h2>
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+            Featured Projects
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             {/* Gesture Virtual Mouse */}

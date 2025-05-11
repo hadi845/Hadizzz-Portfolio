@@ -4,10 +4,12 @@ import emailjs from "emailjs-com";
 
 const GradientBackground = () => (
   <>
+    <RevealOnScroll>
     {/* Top Right Gradient */}
     <div className="absolute top-[-100px] right-[-100px] w-72 h-72 bg-gradient-to-tr from-cyan-500 via-blue-500 to-indigo-500 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
     {/* Bottom Left Gradient */}
     <div className="absolute bottom-[-100px] left-[-100px] w-72 h-72 bg-gradient-to-br from-fuchsia-500 via-pink-500 to-rose-500 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
+    </RevealOnScroll>
   </>
 );
 
@@ -31,7 +33,9 @@ export const Contact = () => {
       <GradientBackground />
       <RevealOnScroll>
         <div className="relative z-10 w-full max-w-lg px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center text-white">Get In Touch</h2>
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+            Get In Touch
+          </h2>
           <form className="space-y-6" onSubmit={handleSubmit}>
             {/* Name */}
             <div>

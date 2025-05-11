@@ -3,10 +3,12 @@ import hadiImg from "../../assets/me2.jpg";
 
 const GradientBackground = () => (
   <>
+    <RevealOnScroll>
     {/* Top Left Gradient Orb */}
     <div className="absolute top-[-120px] left-[-100px] w-80 h-80 bg-gradient-to-tr from-blue-400 via-indigo-500 to-purple-600 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
     {/* Bottom Right Gradient Orb */}
     <div className="absolute bottom-[-120px] right-[-100px] w-80 h-80 bg-gradient-to-br from-cyan-400 via-sky-500 to-blue-600 rounded-full blur-3xl opacity-20 animate-spin-slow z-0" />
+    </RevealOnScroll>
   </>
 );
 
