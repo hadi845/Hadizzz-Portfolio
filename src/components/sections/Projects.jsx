@@ -1,5 +1,6 @@
 import React from 'react';
-import { RevealOnScroll } from './RevealOnScroll';
+import { RevealOnScroll } from "../RevealOnScroll";  
+
 
 const GradientBackground = () => (
   <>
